@@ -1,0 +1,368 @@
+/* ===========================
+   RESET
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* ===========================
+   BODY
+=========================== */
+
+body{
+
+    background:#eef3f9;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    min-height:100vh;
+
+    padding:20px;
+
+}
+
+/* ===========================
+   CONTAINER
+=========================== */
+
+.container{
+
+    width:100%;
+
+    max-width:430px;
+
+    background:#ffffff;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.2);
+
+}
+
+/* ===========================
+   HEADER
+=========================== */
+
+.header{
+
+    background:#1e88e5;
+
+    color:white;
+
+    text-align:center;
+
+    padding:25px;
+
+}
+
+#logo{
+
+    width:80px;
+
+    margin-bottom:10px;
+
+}
+
+.header h1{
+
+    font-size:28px;
+
+}
+
+.header p{
+
+    margin-top:8px;
+
+    opacity:.9;
+
+}
+
+/* ===========================
+   TANGGAL & JAM
+=========================== */
+
+.infoBox{
+
+    display:flex;
+
+    gap:10px;
+
+    padding:15px;
+
+}
+
+.box{
+
+    flex:1;
+
+    background:#1e88e5;
+
+    color:white;
+
+    border-radius:12px;
+
+    text-align:center;
+
+    padding:15px;
+
+}
+
+.box h3{
+
+    font-size:16px;
+
+    margin-bottom:8px;
+
+}
+
+.box p{
+
+    font-size:18px;
+
+    font-weight:bold;
+
+}
+
+/* ===========================
+   CARD
+=========================== */
+
+.card{
+
+    background:#ffffff;
+
+    margin:15px;
+
+    padding:18px;
+
+    border-radius:15px;
+
+    box-shadow:0 3px 10px rgba(0,0,0,.08);
+
+}
+
+.card h2{
+
+    text-align:center;
+
+    margin-bottom:15px;
+
+    color:#1e88e5;
+
+}
+
+.card label{
+
+    font-weight:bold;
+
+}
+
+.card select{
+
+    width:100%;
+
+    margin-top:10px;
+
+    padding:12px;
+
+    border-radius:10px;
+
+    border:1px solid #ccc;
+
+    font-size:16px;
+
+}
+
+.card p{
+
+    margin:8px 0;
+
+    font-size:16px;
+
+}
+
+/* ===========================
+   BUTTON GRID
+=========================== */
+
+.buttonGrid{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:10px;
+
+    padding:15px;
+
+}
+
+.buttonGrid button{
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:10px;
+
+    color:white;
+
+    font-size:16px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+}
+
+/* ===========================
+   WARNA BUTTON
+=========================== */
+
+.hadir{
+
+    background:#2e7d32;
+
+}
+
+.izin{
+
+    background:#f9a825;
+
+}
+
+.kembali{
+
+    background:#1565c0;
+
+}
+
+.pulang{
+
+    background:#d32f2f;
+
+}
+
+/* ===========================
+   SCAN BUTTON
+=========================== */
+
+.scan{
+
+    width:calc(100% - 30px);
+
+    margin:0 15px 15px;
+
+    padding:16px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#212121;
+
+    color:white;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+}
+
+/* ===========================
+   READER
+=========================== */
+
+#reader{
+
+    margin:15px;
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+.footer{
+
+    text-align:center;
+
+    padding:20px;
+
+    background:#f5f5f5;
+
+}
+
+.footer p{
+
+    font-weight:bold;
+
+    color:#1e88e5;
+
+}
+
+.footer small{
+
+    color:#666;
+
+}
+
+/* ===========================
+   BUTTON DISABLED
+=========================== */
+
+button:disabled{
+
+    opacity:.5;
+
+    cursor:not-allowed;
+
+}
+
+/* ===========================
+   RESPONSIVE HP
+=========================== */
+
+@media(max-width:480px){
+
+.header h1{
+
+    font-size:22px;
+
+}
+
+.box p{
+
+    font-size:16px;
+
+}
+
+.buttonGrid button{
+
+    font-size:15px;
+
+}
+
+.scan{
+
+    font-size:16px;
+
+}
+
+}

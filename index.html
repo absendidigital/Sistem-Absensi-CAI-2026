@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sistem Absensi CAI 2026</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- HEADER -->
+
+    <div class="header">
+
+        <img src="logo.png" id="logo">
+
+        <h1>SISTEM ABSENSI CAI 2026</h1>
+
+        <p>Scan QR Peserta CAI Belitang</p>
+
+    </div>
+
+
+    <!-- TANGGAL DAN JAM -->
+
+    <div class="infoBox">
+
+        <div class="box">
+
+            <h3>📅 Tanggal</h3>
+
+            <p id="tanggal">-</p>
+
+        </div>
+
+        <div class="box">
+
+            <h3>🕒 Jam</h3>
+
+            <p id="jam">-</p>
+
+        </div>
+
+    </div>
+
+
+    <!-- SESI -->
+
+    <div class="card">
+
+        <label>Sesi Acara</label>
+
+        <select id="sesi">
+
+            <option>Pendaftaran Peserta</option>
+
+            <option>Pembukaan</option>
+
+            <option>Sesi Subuh</option>
+
+            <option>Sesi Pagi</option>
+
+            <option>Sesi Siang</option>
+
+            <option>Sesi Malam</option>
+
+            <option>ISHOMA</option>
+
+            <option>Penutupan</option>
+
+        </select>
+
+    </div>
+
+
+    <!-- DATA PESERTA -->
+
+    <div class="card">
+
+        <h2>Data Peserta</h2>
+
+        <p id="namaPeserta">Belum Ada Peserta</p>
+
+        <p id="idPeserta">ID : -</p>
+
+        <p id="desaPeserta">Asal Desa : -</p>
+
+        <p id="kelompokPeserta">Kelompok : -</p>
+
+        <p id="statusPeserta">Status : -</p>
+
+    </div>
+
+
+    <!-- HASIL SCAN -->
+
+    <div class="card">
+
+        <h2>Hasil Scan</h2>
+
+        <p id="hasilScan">
+
+            Belum Ada QR Yang Dipindai
+
+        </p>
+
+    </div>
+
+
+    <!-- TOMBOL -->
+
+    <div class="buttonGrid">
+
+        <button id="hadir" class="hadir">
+
+            ✅ HADIR
+
+        </button>
+
+        <button id="izin" class="izin">
+
+            🟡 IZIN
+
+        </button>
+
+        <button id="kembali" class="kembali">
+
+            🔵 KEMBALI
+
+        </button>
+
+        <button id="pulang" class="pulang">
+
+            🔴 PULANG
+
+        </button>
+
+    </div>
+
+    <!-- CAMERA -->
+
+    <div id="reader"></div>
+
+
+
+
+    <!-- SCAN -->
+
+    <button id="scanBtn" class="scan">
+
+        📷 SCAN QR
+
+    </button>
+
+
+    
+    <!-- FOOTER -->
+
+    <div class="footer">
+
+        <p>
+
+            Sistem Absensi CAI 2026
+
+        </p>
+
+        <small>
+
+            Developed by
+
+            <br>
+
+            Fajar Hisbulloh Al Muzzaki
+
+        </small>
+
+    </div>
+
+</div>
+
+
+<!-- Library Scanner -->
+
+<script src="https://unpkg.com/html5-qrcode"></script>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
